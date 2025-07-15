@@ -29,10 +29,16 @@
 			]
 		},
 		"numbers": {
-			"patterns": [{
-				"name": "constant.numeric.b",
-				"match": "\\b((0x)?[0-9]+)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "constant.numeric.b",
+					"match": "\\b([0-9]+)\\b"
+				},
+				{
+					"name": "constant.numeric.b",
+					"match": "\\b(0x[0-9a-f]*)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.b",
