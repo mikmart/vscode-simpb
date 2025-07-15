@@ -39,7 +39,7 @@
 				},
 				{
 					"name": "constant.numeric.b",
-					"match": "\\b(0x[0-9a-f]*)\\b"
+					"match": "\\b(0x[0-9a-fA-F]*)\\b"
 				}
 			]
 		},
