@@ -13,6 +13,9 @@
 		},
 		{
 			"include": "#characters"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -59,6 +62,20 @@
 				{
 					"name": "constant.character.escape.b",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.b",
+					"begin": "/\\*",
+					"end": "\\*/"
+				},
+				{
+					"name": "comment.line.b",
+					"begin": "//",
+					"end": "\n"
 				}
 			]
 		}
