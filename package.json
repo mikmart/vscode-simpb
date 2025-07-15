@@ -3,12 +3,12 @@
   "displayName": "simpb",
   "description": "Simple B language support",
   "homepage": "https://github.com/mikmart/vscode-simpb",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mikmart/vscode-simpb"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikmart/vscode-simpb"
+  },
   "publisher": "mikmart",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -16,16 +16,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "b",
-      "aliases": ["B", "b"],
-      "extensions": [".b"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "b",
-      "scopeName": "source.b",
-      "path": "./syntaxes/b.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "b",
+        "aliases": [
+          "B",
+          "b"
+        ],
+        "extensions": [
+          ".b"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "b",
+        "scopeName": "source.b",
+        "path": "./syntaxes/b.tmLanguage.json"
+      }
+    ]
   }
 }
