@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "B",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#characters"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.b",
+					"match": "\\b(case|if|else|while|switch|goto|return)\\b"
+				},
+				{
+					"name": "keyword.other.b",
+					"match": "\\b(auto|extrn|__asm__|__variadic__)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.b",
+				"match": "\\b((0x)?[0-9]+)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.b",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.b",
+					"match": "\\\\."
+				}
+			]
+		},
+		"characters": {
+			"name": "constant.character.b",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.b",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.b"
+}

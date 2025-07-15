@@ -1,0 +1,25 @@
+{
+  "name": "simpb",
+  "displayName": "simpb",
+  "description": "Simple B language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "b",
+      "aliases": ["B", "b"],
+      "extensions": [".b"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "b",
+      "scopeName": "source.b",
+      "path": "./syntaxes/b.tmLanguage.json"
+    }]
+  }
+}
